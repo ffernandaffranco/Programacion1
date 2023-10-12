@@ -113,21 +113,21 @@ def prob_generala(N):
     return prob
 
 
-def prob_generala_servida(N):
-
-    saquegenerala = 0
-
-    for i in range(N):
-        tirada = tirar()
-        generala = es_generala(tirada)
-        if generala:
-            saquegenerala += 1
-
-    prob = saquegenerala / N
-
-    return prob
-
-
+# def prob_generala_servida(N):
+#
+#     saquegenerala = 0
+#
+#     for i in range(N):
+#         tirada = tirar()
+#         generala = es_generala(tirada)
+#         if generala:
+#             saquegenerala += 1
+#
+#     prob = saquegenerala / N
+#
+#     return prob
+#
+#
 # Para chequear si efectivamente la probabilidad de obtener una generala no
 # servida es mayor a la de obtener una generala servida (en cien mil tiradas)
 # ⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄
